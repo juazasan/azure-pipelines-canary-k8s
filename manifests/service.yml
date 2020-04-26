@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sampleapp
+  name: prometheusdemoapp
   labels:
-    app: sampleapp
+    app: prometheusdemoapp
 spec:
   selector:
-    app: sampleapp
+    app: prometheusdemoapp
   ports:
   - name: metrics
     port: 8000
