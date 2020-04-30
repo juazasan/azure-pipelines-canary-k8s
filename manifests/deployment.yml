@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: prometheusdemoapp
-        image: acr18120.azurecr.io/prometheusdemoapp:v1
+        image: ACR_ENDPOINT/prometheusdemoapp:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
