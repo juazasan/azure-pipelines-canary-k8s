@@ -13,13 +13,13 @@ spec:
     metadata:
       annotations:
         prometheus.io/scrape: "true"
-        prometheus.io/port: 8000
+        prometheus.io/port: "8000"
       labels:
         app: prometheusdemoapp
     spec:
       containers:
       - name: prometheusdemoapp
-        image: ACR_ENDPOINT/prometheusdemoapp:v1
+        image: acr18120.azurecr.io/prometheusdemoapp:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
